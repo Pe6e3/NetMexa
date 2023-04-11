@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE HTML>
+
+<html>
+@await Html.PartialAsync("HeadPartial")
+
+<body class="is-preload">
+
+    <!-- Header -->
+    @await Html.PartialAsync("HeaderPartial")
+    <!-- Header -->
+
+    <!-- Main -->
+    @RenderBody()
+
+    <!-- Footer -->
+    @await Html.PartialAsync("FooterPartial")
+
+
+    <!-- Scripts -->
+    @await Html.PartialAsync("ScriptsPartial")
+
+</body>
+</html>
